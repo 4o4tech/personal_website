@@ -491,8 +491,8 @@ hr{
 
 /*use js contral the uppper semi_circle*/
 /* mouse move in to uppersemi-circle   */
-/*
-.circle .upper_semi_circle:hover{
+
+/*.circle .upper_semi_circle:hover{
     width:300px;
     height:300px;
     border-radius: 150px;
@@ -500,8 +500,8 @@ hr{
     -webkit-transition:all .5s ease 0.2s;
     -moz-transition:all .5s ease 0.2s;
     
-}
-*/
+}*/
+
 
 
 

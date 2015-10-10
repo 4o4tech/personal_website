@@ -11,33 +11,43 @@ window.onload = function(){
 
 function semi_circle(){
     
-    var group = document.getElementById("circle_group").getElementsByTagName('div')
+    var list = document.getElementById("circle_group").getElementsByTagName('li')
     
     
-    for(var i=0;i<group.length;i++){
-        var circle = group[i].childNodes
+    for(var i=0;i<list.length;i++){
         
-        for(var j=0;j<circle.length;j++){
-            var upper = circle[1]
-            
-            upper.onmouseover = function(){
-                upper.style.height = 300 + 'px'
-                
-                upper.style.borderRadius = 150 +'px'
-            }
-            
-            
-            upper.onmouseout = function(){
-                upper.style.height = 150 + 'px'
-                
-                upper.style.borderRadius = 150+'px'+' '+150+'px'+' '+0+'px'+' '+0+'px'
-            }
-            
-        }
+        bind(list[i],'mouseover',cirFun)
+        
+        
+        
+    }
+}
+    
+    function bind(element,eventType,callfun){
+        element.addEventListener(eventType,callfun,false)
     }
     
-  
-   
+    function cirFun(e){
+        
+        var upper = e.target
+        
+        var lower = e.target.parentElement
+        console.log(lower)
+        var pLower = lower.getElementsByTagName('p')
+
+        upper.style.height = 300 + 'px'
+                
+        upper.style.borderRadius =150 + 'px'
+      
+        for(var j =0;j<pLower.length;j++){
+            console.log(pLower[j])
+            pLower[j].style.display = 'none'
+            
+        }
+
+        
+       
+        
+    }
+         
     
-    
-}
