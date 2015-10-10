@@ -440,17 +440,16 @@ hr{
 }
 
 /* set semi-cilcle div size at here */
-.circle .upper_semi_circle{
+.circle i{
     float:left;
     width:300px;
-    height:150px;
-    border-radius: 150px 150px 0 0;
+    
     background-color:rgba(50,50,0,0.5);
 }
 
 /*
 
-.circle:nth-child(1) .upper_semi_circle{
+.circle:nth-child(1) i{
     
     
     
@@ -459,30 +458,28 @@ hr{
 
 
 
-.circle .lower_semi_circle{
+.circle p{
     float:left;
     width:300px;
-    height:150px;
-    border-radius:0 0 150px 150px;
-    background-color:rgba(50,0,0,0.5);
+    
 }
 
 /*set upper semi-circle img  at here */
-.circle:nth-child(1) .upper_semi_circle{
+.circle:nth-child(1) i{
     background-image:url(img/stree0.jpg);
     background-position: center center;
     background-size:cover;
     
 }
 
-.circle:nth-child(2) .upper_semi_circle{
+.circle:nth-child(2) i{
     background-image:url(img/stree1.jpg);
     background-position: center center;
     background-size:cover;
     
 }
 
-.circle:nth-child(3) .upper_semi_circle{
+.circle:nth-child(3) i{
     background-image:url(img/stree2.jpg);
     background-position: center center;
     background-size:cover;
@@ -491,8 +488,42 @@ hr{
 
 /*use js contral the uppper semi_circle*/
 /* mouse move in to uppersemi-circle   */
-/*
-.circle .upper_semi_circle:hover{
+
+.mouseover{
+/*    width:300px;*/
+    height:300px;
+    border-radius: 150px;
+   transition: all .5s ease 0.2s;
+    -webkit-transition:all .5s ease 0.2s;
+    -moz-transition:all .3s ease 0.1s;
+}
+
+.mouseout{
+/*    width:300px;*/
+    height:150px;
+    border-radius: 150px 150px 0px 0px ;
+    transition: all .5s ease 0.2s;
+    -webkit-transition:all .5s ease 0.2s;
+    -moz-transition:all .3s ease 0.1s;
+}
+
+
+.low_mouseover{
+   display: none;
+   opacity:0.2;
+}
+
+.low_mouseout{
+    height:150px;
+    border-radius:0 0 150px 150px;
+    background-color:rgba(50,0,0,0.5);
+    overflow: hidden;
+    opacity:0.8;
+    transition: all .5s ease 0.1s;
+    -webkit-transition:all .5s ease 0.1s;
+    -moz-transition:all .5s ease 0.1s;
+}
+/*.circle i:hover{
     width:300px;
     height:300px;
     border-radius: 150px;
@@ -500,8 +531,8 @@ hr{
     -webkit-transition:all .5s ease 0.2s;
     -moz-transition:all .5s ease 0.2s;
     
-}
-*/
+}*/
+
 
 
 
