@@ -2,6 +2,11 @@
 
 window.onload = function(){
     
+    console.log('Hello you are look at me !!! (@~@)')
+    
+    console.log('\n This website  all of code and image is on the github. \n github: https://github.com/clingk/personal_website.')
+    
+    console.log('have fun !!!')
     
     
     //call grey section circle animation function
@@ -19,12 +24,14 @@ window.onload = function(){
 
 
 /*
+
 function  semi_circle
-        animation of the  grey section circle 
+animation of the  grey section circle 
+
 */
 
 function semi_circle(){
-    
+    // get grey-section  circle_group  ul>li tags
     var list = document.getElementById("circle_group").getElementsByTagName('li')
     
     
@@ -37,6 +44,7 @@ function semi_circle(){
     }
 }
     
+    // 
     function overbind(element,eventType,callfun){
         element.addEventListener(eventType,callfun,false);
     }
@@ -60,19 +68,10 @@ function semi_circle(){
             
         
             var lower = e.target.parentElement;
-    //        console.log(lower)
-            var pLower = lower.getElementsByTagName('p');
-
-           
-           /* upper.style.height = 300 + 'px'
-
-            upper.style.borderRadius =150 + 'px'*/
-
+            var pLower = lower.getElementsByTagName('p')
             upper.className = 'mouseover';
-             
-                    
+                      
             for(var j =0;j<pLower.length;j++){
-    //            console.log(pLower[j])
                 pLower[j].className = 'low_mouseover';
             }
 
@@ -92,29 +91,20 @@ function semi_circle(){
         
         if(upper.className == 'mouseover'){
             var lower = e.target.parentElement;
-//            console.log(lower)
+
             var pLower = lower.getElementsByTagName('p');
-
-            /*
-            upper.style.height = 150 + 'px'
-
-            upper.style.borderRadius =150 + 'px' +' '+ 150 + 'px'+' '+ 0 + 'px'+' '+0 + 'px'
-            */
             
-             upper.className = 'mouseout';
+            upper.className = 'mouseout';
 
-             
-         for(var j =0;j<pLower.length;j++){
+            for(var j =0;j<pLower.length;j++){
 
-              pLower[j].className = 'low_mouseout';
-         }
+                  pLower[j].className = 'low_mouseout';
+             }
             
         }
         
 }
-         
-    
-/*
+
 
 
 
