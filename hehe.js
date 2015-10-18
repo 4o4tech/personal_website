@@ -5,7 +5,15 @@ window.onload = function(){
     
     
     //call grey section circle animation function
-    semi_circle()
+    semi_circle();
+    
+    //multiple animation  for item_icon span
+    mulAnimation();
+    
+    $(function(){
+    $('#dowebok').fullpage();
+});
+   
     
 }
 
@@ -22,25 +30,25 @@ function semi_circle(){
     
     for(var i=0;i<list.length;i++){
         
-        overbind(list[i],'mouseover',over)
+        overbind(list[i],'mouseover',over);
         
         
-        outbind(list[i],'mouseout',out)
+        outbind(list[i],'mouseout',out);
     }
 }
     
     function overbind(element,eventType,callfun){
-        element.addEventListener(eventType,callfun,false)
+        element.addEventListener(eventType,callfun,false);
     }
 
-     function outbind(element,eventType,callfun){
-        element.addEventListener(eventType,callfun,false)
+    function outbind(element,eventType,callfun){
+        element.addEventListener(eventType,callfun,false);
     }
 
 
     function over(e){
         
-        var upper = e.target
+        var upper = e.target;
 /*
         when mouse over upper 
         upper semi-circle animation fill all the cirlce 
@@ -49,23 +57,23 @@ function semi_circle(){
 */
         
         if(upper.className == 'mouseout'){
-            console.log(upper.className)
+            
         
-            var lower = e.target.parentElement
+            var lower = e.target.parentElement;
     //        console.log(lower)
-            var pLower = lower.getElementsByTagName('p')
+            var pLower = lower.getElementsByTagName('p');
 
            
            /* upper.style.height = 300 + 'px'
 
             upper.style.borderRadius =150 + 'px'*/
 
-            upper.className = 'mouseover'
+            upper.className = 'mouseover';
              
                     
             for(var j =0;j<pLower.length;j++){
     //            console.log(pLower[j])
-                pLower[j].className = 'low_mouseover'
+                pLower[j].className = 'low_mouseover';
             }
 
         }
@@ -79,25 +87,26 @@ function semi_circle(){
         
 */
     function out(e){
-        var upper = e.target
+        var upper = e.target;
         
         
         if(upper.className == 'mouseover'){
-            var lower = e.target.parentElement
+            var lower = e.target.parentElement;
 //            console.log(lower)
-            var pLower = lower.getElementsByTagName('p')
+            var pLower = lower.getElementsByTagName('p');
 
-            /*upper.style.height = 150 + 'px'
+            /*
+            upper.style.height = 150 + 'px'
 
-            upper.style.borderRadius =150 + 'px' +' '+ 150 + 'px'+' '+ 0 + 'px'+' '+0 + 'px'*/
+            upper.style.borderRadius =150 + 'px' +' '+ 150 + 'px'+' '+ 0 + 'px'+' '+0 + 'px'
+            */
             
-             upper.className = 'mouseout'
+             upper.className = 'mouseout';
 
              
          for(var j =0;j<pLower.length;j++){
-//                       console.log(pLower[j])
-//            pLower[j].style.display = 'block'
-              pLower[j].className = 'low_mouseout'
+
+              pLower[j].className = 'low_mouseout';
          }
             
         }
@@ -105,3 +114,82 @@ function semi_circle(){
 }
          
     
+/*
+
+
+
+
+  /*
+        
+    if  project is small   
+    use this   function   or  U can try to use  JQuery  (~^~)!!!
+                                            15/12/16   u's jimze
+    
+    multiple animation is control same item animation
+    just like: li, div, span...
+
+    need to call aniOpacity function to run the function
+
+*/
+
+function mulAnimation(){
+    
+//    alert('喵呜~~~    \n  mulAnimation  will run !!!')//test  test  test
+    
+    
+    var liIcon = document.getElementById("item_icon").getElementsByTagName('li');
+
+    for(var i=0; i<liIcon.length;i++){
+
+        liIcon[i].timer = null;
+       liIcon[i].alpha = 10;
+        liIcon[i].onmouseover = function(){   
+            aniOpacity(this,95);
+            this.style.boxShadow = '10px 5px 10px rgba(0,0,0,0.75)';
+                
+        }
+
+        liIcon[i].onmouseout = function(){
+            aniOpacity(this,55);
+            this.style.boxShadow = '0px 0px 10px rgba(0,0,0,0.75)';
+           
+        }
+
+    }
+
+    /* contrl the opacity speed of the animation*/
+
+    function aniOpacity(obj,iTarget){
+      
+        clearInterval(obj.timer);
+        obj.timer = setInterval(function(){
+            var speed = 0;
+
+            if (obj.alpha >iTarget){
+                speed =Math.floor(iTarget-obj.alpha)/10;
+                
+            }
+            else{
+                speed =Math.ceil(iTarget-obj.alpha)/10;
+            }
+
+
+            if(obj.alpha == iTarget){
+                clearInterval(obj.timer);
+            }
+            else{
+                obj.alpha= Math.ceil(obj.alpha+= speed);
+
+
+                obj.style.filter = "alpha(opacity:"+obj.alpha+")";//this js is for stupid IE
+
+                obj.style.opacity = obj.alpha/100;
+            }
+            
+
+        },50)
+}
+    
+
+}
+
