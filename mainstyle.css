@@ -306,7 +306,7 @@ hr{
 
 .article-pre .txt-sec{
     width:35%;
-    height:80%;
+    height:85%;
     
     float: right;
     position:relative;
@@ -336,11 +336,14 @@ hr{
 
 .article-pre .txt-sec a{
     
-    margin-top:15px;
+    position:relative;
+    top:15px;
+    
+    font-family: cursive;
     text-decoration: none;
     font-size:14px;
     text-align: center;
-    font-family:微软雅黑;
+  
     font-weight: 600;
     opacity: 0.8;
     color: #c11a7a;
@@ -688,6 +691,7 @@ hr{
 button:hover{
      opacity:1;
      background:#be4c79 ;
+     color:aliceblue;
     
 }
 
