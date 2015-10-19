@@ -1,4 +1,4 @@
-# personal_website
+# Personal_Website
 it is personal website template
 
 i am still hacking on this job //time 2015/10/10
@@ -30,14 +30,14 @@ and i fixed it just now.
 
 
 _________________________________________________________________________________________________________________________
-below this line will help u use the files
+#####below this line will help u use the files
 
 
 
-How to use reset this website: 
+#####How to use reset this website: 
 
 
-#index.html  HTML
+#index.html  &nbsp;&nbsp;&nbsp;&nbsp;HTML
 
 html 
     -head
@@ -53,13 +53,13 @@ html
         
     
 
-#mainstyle.css  CSS
+#mainstyle.css  &nbsp;&nbsp;&nbsp;&nbsp;CSS
 
 
 
     
 
-#hehe.js  javasript
+#hehe.js  &nbsp;&nbsp;&nbsp;&nbsp;javasript
 
 
 
