@@ -1,3 +1,29 @@
+
+/*
+
+
+ Hello ! you  are look at me !!! (@~@) 
+    
+ This website  all of code and image is on the github. 
+
+\n github: https://github.com/clingk/personal_website.
+
+
+
+if U wnat to reset css style please read readme.md 
+
+and use  'contrl + F' will help the property U wanna reset
+
+Thanks use my read my code  .
+
+
+
+
+
+*/
+
+
+
 /*css reset*/
 
 body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,
@@ -224,10 +250,6 @@ hr{
     
     overflow: hidden;
     
-/*  
-    padding-left:10%;
-    padding-right:10%;
-*/
 }
 
 #item_icon .icon{
@@ -297,11 +319,9 @@ hr{
 }
 
 .article-pre .img-sec img{
-  
     width:100%;
     height:100%;
     margin-top:5%;
-    
 }
 
 .article-pre .txt-sec{
@@ -357,6 +377,9 @@ hr{
     color: #c11a7a;
 }
 
+
+
+/*use  different class to set the article and image position*/
 .article-pre2{
      background-color:rgb(8, 64, 89);
 }
@@ -388,11 +411,14 @@ hr{
     
 }
 
+/*warp of the purple section*/
 .purple-warp{
     margin: 50px auto;
     max-width:80%;
     
 }
+
+
 
 .sub-head{
     width:50%;
@@ -527,15 +553,6 @@ hr{
     
 }
 
-/*
-
-.circle:nth-child(1) i{
-    
-    
-    
-}
-*/
-
 
 
 .circle p{
@@ -613,26 +630,11 @@ hr{
     -webkit-transition:all .5s ease 0.1s;
     -moz-transition:all .5s ease 0.1s;
 }
-/*
-.circle i:hover{
-    width:300px;
-    height:300px;
-    border-radius: 150px;
-    transition: all .5s ease 0.2s;
-    -webkit-transition:all .5s ease 0.2s;
-    -moz-transition:all .5s ease 0.2s;
-    
-}
-
-*/
-
-
 
 
 .bottom{
     width:100%;
     height:100vh;
-    
 }
 
 .bottom{
@@ -706,17 +708,22 @@ button:hover{
    
 }
 .copy p{
-    margin-top:80px;
-     font-size:18px;
+    margin-top:60px;
+     font-size:20px;
     text-align: center;
     letter-spacing: 3px;
     font-family:微软雅黑;
     font-weight: 600;
     color:aliceblue;
    
-/*
-    border: 2px solid #ccc;
-    border-radius: 2px;
-*/
+}
+.copy h6{
+    margin-top:20px;
+    font-size:14px;
+    text-align: center;
+    letter-spacing: 2px;
+    font-family:黑体;
+    
+    color:#eee;
 }
 
