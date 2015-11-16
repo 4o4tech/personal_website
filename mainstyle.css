@@ -656,11 +656,17 @@ hr{
     bottom: 0;
     left:0;
     
-    background-color: rgba(0, 0, 0, 0.3);
-    box-shadow:inset -100px -100px 50px rgba(0, 0, 0, 0.2)
+    background-color: rgba(0, 0, 0, 0.4);
+    box-shadow:inset 150px -350px 100px rgba(0, 0, 0, 0.2)
     
    
 }
+
+.bottom-mask:hover{
+    background-color: rgba(0, 0, 0, 0.3);
+    box-shadow:inset 0px 0px 50px rgba(0, 0, 0, 0.3)
+}
+
 
 .bottom_btn{
     width:200px;
