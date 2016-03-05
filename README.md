@@ -11,6 +11,7 @@ and i fixed it just now.
 
 
 //2016/3/5
+
 it is personal website template
 
 i am still hacking on this job 
@@ -33,12 +34,6 @@ per_page
         
     
 
-<hr>
-
-
-
-
-
 
 _________________________________________________________________________________________________________________________
 ##### below this line will help u use the files
@@ -48,7 +43,7 @@ ________________________________________________________________________________
 ### How to use reset this website: 
 
 
-#index.html  &nbsp;&nbsp;&nbsp;&nbsp;HTML
+#####index.html  &nbsp;&nbsp;&nbsp;&nbsp;HTML
 
 html 
     -head
@@ -64,13 +59,13 @@ html
         
     
 
-#mainstyle.css  &nbsp;&nbsp;&nbsp;&nbsp;CSS
+#####mainstyle.css  &nbsp;&nbsp;&nbsp;&nbsp;CSS
 
 
 
     
 
-#hehe.js  &nbsp;&nbsp;&nbsp;&nbsp;javasript
+#####hehe.js  &nbsp;&nbsp;&nbsp;&nbsp;javasript
 
 
 ### install and start node
