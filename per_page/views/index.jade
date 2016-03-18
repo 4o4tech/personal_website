@@ -1,134 +1,133 @@
 extends layout
-
-    // main div have section
-    #dowebok.content
-      header.section.active
-        .header_warp
-          nav
-            // navagation
-            .logo
-              a(href='#') Jimze
-            button test
-            ul
-              li
-                a(href='') Home page
-              li
-                a(href='') Blog
-              li
-                a(href='https://github.com/clingk') Github
-              li
-                a(href='/aboutme') About me
-          #banner
-            i.mask
-            .inner
-              h1 张小泽
-              p
-                | 一个有 我 的世界
-                br
-                br
-                | 								Me & World
-              button
-                | 了解我
-      // green  square icon
-      section.green-section.section
-        .warp
-          .green-title
-            h2 一个有 我 的故事
-            hr
-            p
-              | We can always redeem the man who aspires and strives
-          ul#item_icon
-            li.icon
-              i
-              p
-                | 吃饭
-            li.icon
-              i  
-              p
-                | 睡觉
-            li.icon
-              i  
-              p
-                | 想妹纸
-      // article preview section
-      section.blue-section.section
-        .article-pre
-          .img-sec
-            img(data-src='img/pic01.jpg', alt='')
-          .txt-sec
-            h2  一开始我是拒绝的 
-            p
-              | People will always follow the heart much more readily than they will follow orders.
-            a(href='') More..
-        .article-pre.article-pre2
-          .img-sec
-            img(data-src='img/pic02.jpg', alt='')
-          .txt-sec
-            h2  然而我依旧一人 
-            p
-              | It's not my responsiblity to have a personal life that everybody's comfortable with.
-            a(href='') More..
-        .article-pre.article-pre3
-          .img-sec
-            img(data-src='img/pic03.jpg', alt='')
-          .txt-sec
-            h2  还有多远的路要走 
-            p
-              | One is always on a strange road, watching strange scenery and listening to strange music. Then one day, you will find that the things you try hard to forget are already gone.
-            a(href='') More..
-      // purple section   have card group
-      section.purple-section.section
-        .purple-warp
-          .sub-head
-            h2  修炼技能
-            p  伸展领域之广度 探求高深之技艺 必究其道义之处 并践行于代码之间
-          .card-group
-            .card
-              h4 html/css/bootstrap
-            .card
-              h4  python/javascript/Node.js/java SE 
-            .card
-              h4  linux/centos server
-            .card
-              h4  arduino/raspbarry pi
-      // grey section use circle group
-      section.grey-section.section
-        .grey_head
-          h2 静若呆鸡 动若疯狗
-        .warp
-          ul#circle_group
-            li.circle
-              i.mouseout
-              p.lower_semi_circle
-                | 发呆
-              p.low_mouseout
-            li.circle
-              i.mouseout
-              p.lower_semi_circle
-                | 奔跑
-              p.low_mouseout
-            li.circle
-              i.mouseout
-              p.lower_semi_circle
-                | 犯病
-              p.low_mouseout
-      // LAST miaow miaow ~~  cat section
-      section.bottom.section
-        i.bottom-mask
-        .bottom_btn
-          button
-            | 养我
-          button
-            | 喂我
-        .copy
+block content
+#dowebok.content
+  header.section.active
+    .header_warp
+      nav
+        // navagation
+        .logo
+          a(href='#') Jimze
+        button test
+        ul
+          li
+            a(href='') Home page
+          li
+            a(href='') Blog
+          li
+            a(href='https://github.com/clingk') Github
+          li
+            a(href='/aboutme') About me
+      #banner
+        i.mask
+        .inner
+          h1 张小泽
           p
-            | @ Jimze
-          h6 骄傲的使用了 小泽童鞋~~自己做的首页
-  //
-    <footer style="display = none;">
-    footer is belong to me  haha~~~
-    hack by  @jimze @clingk
-    email: clinghere@gmail.com
-    ( ●▽● )  maiow~~  maiow~~
-    
-    </footer>
+            | 一个有 我 的世界
+            br
+            br
+            | 								Me & World
+          button
+            | 了解我
+  // green  square icon
+  section.green-section.section
+    .warp
+      .green-title
+        h2 一个有 我 的故事
+        hr
+        p
+          | We can always redeem the man who aspires and strives
+      ul#item_icon
+        li.icon
+          i
+          p
+            | 吃饭
+        li.icon
+          i  
+          p
+            | 睡觉
+        li.icon
+          i  
+          p
+            | 想妹纸
+  // article preview section
+  section.blue-section.section
+    .article-pre
+      .img-sec
+        img(data-src='img/pic01.jpg', alt='')
+      .txt-sec
+        h2  一开始我是拒绝的 
+        p
+          | People will always follow the heart much more readily than they will follow orders.
+        a(href='') More..
+    .article-pre.article-pre2
+      .img-sec
+        img(data-src='img/pic02.jpg', alt='')
+      .txt-sec
+        h2  然而我依旧一人 
+        p
+          | It's not my responsiblity to have a personal life that everybody's comfortable with.
+        a(href='') More..
+    .article-pre.article-pre3
+      .img-sec
+        img(data-src='img/pic03.jpg', alt='')
+      .txt-sec
+        h2  还有多远的路要走 
+        p
+          | One is always on a strange road, watching strange scenery and listening to strange music. Then one day, you will find that the things you try hard to forget are already gone.
+        a(href='') More..
+  // purple section   have card group
+  section.purple-section.section
+    .purple-warp
+      .sub-head
+        h2  技能修炼
+        p  伸展领域之广度 探求高深之技艺 必究其道义之处 并践行于代码之间
+      .card-group
+        .card
+          h4 html/css/js
+        .card
+          h4  python/javascript/Node.js/java SE 
+        .card
+          h4  linux/centos server
+        .card
+          h4  arduino/raspbarry pi
+  // grey section use circle group
+  section.grey-section.section
+    .grey_head
+      h2 静若呆鸡 动若疯狗
+    .warp
+      ul#circle_group
+        li.circle
+          i.mouseout
+          p.lower_semi_circle
+            | 发呆
+          p.low_mouseout
+        li.circle
+          i.mouseout
+          p.lower_semi_circle
+            | 奔跑
+          p.low_mouseout
+        li.circle
+          i.mouseout
+          p.lower_semi_circle
+            | 犯病
+          p.low_mouseout
+  // LAST miaow miaow ~~  cat section
+  section.bottom.section
+    i.bottom-mask
+    .bottom_btn
+      button
+        | 养我
+      button
+        | 喂我
+    .copy
+      p
+        | @ Jimze
+      h6 骄傲的使用了 小泽童鞋~~自己做的首页
+//
+  <footer style="display = none;">
+  footer is belong to me  haha~~~
+  hack by  @jimze @clingk
+  email: clinghere@gmail.com
+  ( ●▽● )  maiow~~  maiow~~
+
+  </footer>
