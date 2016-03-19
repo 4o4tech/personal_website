@@ -24,7 +24,7 @@ function semi_circle() {
 
         overbind(list[i], 'mouseover', over);
 
-        outbind(list[i], 'mouseout', out);
+        overbind(list[i], 'mouseout', over);
     }
 }
 
@@ -32,9 +32,9 @@ function overbind(element, eventType, callfun) {
     element.addEventListener(eventType, callfun, false);
 }
 
-function outbind(element, eventType, callfun) {
+/*function outbind(element, eventType, callfun) {
     element.addEventListener(eventType, callfun, false);
-}
+}*/
 
 function over(e) {
 
@@ -44,11 +44,17 @@ function over(e) {
      upper semi-circle animation fill all the cirlce
      And the lower display set as none
 
+     when mouse out upper
+
+     And the lower display set as block
+
      */
 
     if (upper.className == 'mouseout') {
 
         var lower = e.target.parentElement;
+
+        var upper = e.target;
 
         var pLower = lower.getElementsByTagName('p');
 
@@ -59,20 +65,7 @@ function over(e) {
             pLower[j].className = 'low_mouseover';
         }
 
-    }
-
-}
-
-/*
- when mouse out upper
-
- And the lower display set as block
-
- */
-function out(e) {
-    var upper = e.target;
-
-    if (upper.className == 'mouseover') {
+    }else if(upper.className == 'mouseover') {
         var lower = e.target.parentElement;
         
         var pLower = lower.getElementsByTagName('p');
@@ -82,13 +75,12 @@ function out(e) {
         for (var j = 0; j < pLower.length; j++) {
 
             pLower[j].className = 'low_mouseout';
+
         }
 
     }
 
 }
-
-
 
  /*
 
