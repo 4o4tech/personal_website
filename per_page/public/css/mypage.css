@@ -31,6 +31,20 @@
 	border-radius:50px;
 	opacity: 0.85;
 }
+.name{
+	color:rgb(220,220,220);
+	font-weight:600;
+	text-align: center;
+
+}
+
+.user p{
+	color:rgb(220,220,220);
+	font-weight:600;
+	text-align: center;
+}
+
+
 
 #right{
 	width: 60%;
