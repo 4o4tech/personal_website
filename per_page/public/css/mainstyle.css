@@ -88,13 +88,14 @@ nav{
 
 .logo{
     float:left;
+    margin-top: 10px;
     margin-left: 20px;
     line-height:80px;
  
 }
 .logo a{
-    font-size:20px;
-    font-family:黑体;
+    font-size:24px;
+    font-family:;
     font-weight: 600;
     letter-spacing:2px;
     
@@ -111,7 +112,7 @@ nav ul li a, .logo a{
 nav ul{
     list-style: none;
     margin-right: 20px;
-    margin-top:15px;
+    margin-top:25px;
     float:right;
     line-height: inherit;
 
@@ -122,7 +123,7 @@ nav ul li{
     font-size:16px;
     font-family: cursive;
     font-weight: 700;
-    margin-left: 20px;
+    margin-left: 30px;
     line-height:50px;
     color:#aaa;
 }
@@ -133,11 +134,11 @@ nav ul li{
 #banner{
     background: rgba(85, 85, 85, 0.8);
     height: 90vh;
-    background-image: url(../img/bg.jpg);
+    background-image: url(../img/jump.jpg);
     background-repeat: no-repeat;
     background-attachment:fixed;
     background-size:cover;
-    background-position:center; 
+    /*background-position:center; */
    
 }
 #banner .mask{
@@ -151,7 +152,7 @@ nav ul li{
 }
 
 #banner .inner{
-    max-width: 300px;
+    max-width: 350px;
     text-align: center;
     margin: 0 auto;
     position:relative;
@@ -162,7 +163,7 @@ nav ul li{
     margin:0 auto;
     text-align: center;
     font-family:Microsoft YaHei;
-    font-size:28px;
+    font-size:32px;
     font-weight: 600;
     letter-spacing: 5px;
     color: #eee;
