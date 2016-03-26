@@ -1,4 +1,3 @@
-
 /*
 
 
@@ -21,730 +20,703 @@ Thanks use my read my code  .
 */
 
 
-
 /*css reset*/
 
-body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,
-form,fieldset,input,textarea,p,blockquote,th,td {
-padding: 0;
-margin: 0;
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, form, fieldset, input, textarea, p, blockquote, th, td {
+    padding: 0;
+    margin: 0;
 }
+
 table {
-border-collapse: collapse;
-border-spacing: 0;
-}
-fieldset,img {
-border: 0;
-}
-address,caption,cite,code,dfn,em,strong,th,var {
-font-weight: normal;
-font-style: normal;
-}
-ol,ul {
-list-style: none;
-}
-caption,th {
-text-align: left;
-}
-h1,h2,h3,h4,h5,h6 {
-font-weight: normal;
-font-size: 100%;
-}
-q:before,q:after {
-content:'';
-}
-abbr,acronym { border: 0;
+    border-collapse: collapse;
+    border-spacing: 0;
 }
 
-
-
- .aaa li {
-            list-style-type: none;
-            width: 300px;
-            height: 80px;
-            background: yellow;
-            margin-bottom: 10px;
-            position: relative;
-            top: 300px;
-            left: -200px;
-        }
-
-
-
-
-
-
-
-.header_warp{
-    height:100vh;
+fieldset, img {
+    border: 0;
 }
 
-
-
-nav{
-    background-color: rgb(45, 137, 137);/* #b53589 */
-    height:10vh;
+address, caption, cite, code, dfn, em, strong, th, var {
+    font-weight: normal;
+    font-style: normal;
 }
 
-.logo{
-    float:left;
+ol, ul {
+    list-style: none;
+}
+
+caption, th {
+    text-align: left;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: normal;
+    font-size: 100%;
+}
+
+q:before, q:after {
+    content: '';
+}
+
+abbr, acronym {
+    border: 0;
+}
+
+.aaa li {
+    list-style-type: none;
+    width: 300px;
+    height: 80px;
+    background: yellow;
+    margin-bottom: 10px;
+    position: relative;
+    top: 300px;
+    left: -200px;
+}
+
+.header_warp {
+    height: 100vh;
+}
+
+nav {
+    background-color: rgb(45, 137, 137);
+    /* #b53589 */
+    height: 10vh;
+}
+
+.logo {
+    float: left;
     margin-top: 10px;
     margin-left: 20px;
-    line-height:80px;
- 
+    line-height: 80px;
 }
-.logo a{
-    font-size:24px;
-    font-family:;
+
+.logo a {
+    font-size: 24px;
+    font-family: ;
     font-weight: 600;
-    letter-spacing:2px;
-    
-    color:#aaa;
-    
+    letter-spacing: 2px;
+    color: #aaa;
 }
 
-
-nav ul li a, .logo a{
+nav ul li a, .logo a {
     text-decoration: none;
-    color:#dee;
+    color: #dee;
 }
 
-nav ul{
+nav ul {
     list-style: none;
     margin-right: 20px;
-    margin-top:25px;
-    float:right;
+    margin-top: 25px;
+    float: right;
     line-height: inherit;
-
 }
-nav ul li{
-    
-    display:inline-block;
-    font-size:16px;
+
+nav ul li {
+    display: inline-block;
+    font-size: 16px;
     font-family: cursive;
     font-weight: 700;
     margin-left: 30px;
-    line-height:50px;
-    color:#aaa;
+    line-height: 50px;
+    color: #aaa;
 }
 
-
-
-
-#banner{
+#banner {
     background: rgba(85, 85, 85, 0.8);
     height: 90vh;
     background-image: url(../img/jump.jpg);
     background-repeat: no-repeat;
-    background-attachment:fixed;
-    background-size:cover;
-    /*background-position:center; */
-   
-}
-#banner .mask{
-    position:absolute;
-    top:50;
-    left:0;
-    width:100%;
-    height:90vh;
-    background:rgba(0, 0, 0, 0.3);
-   
+    background-attachment: fixed;
+    background-size:100% 99%;
+    background-position:0 20px;
 }
 
-#banner .inner{
+#banner .mask {
+    position: absolute;
+    top: 50;
+    left: 0;
+    width: 100%;
+    height: 90vh;
+    background: rgba(0, 0, 0, 0.3);
+}
+
+#banner .inner {
     max-width: 350px;
     text-align: center;
     margin: 0 auto;
-    position:relative;
-    top:200px;
-    
+    position: relative;
+    top: 200px;
 }
-#banner .inner h1{
-    margin:0 auto;
+
+#banner .inner h1 {
+    margin: 0 auto;
     text-align: center;
-    font-family:Microsoft YaHei;
-    font-size:32px;
+    font-family: Microsoft YaHei;
+    font-size: 32px;
     font-weight: 600;
     letter-spacing: 5px;
     color: #eee;
-  
-}
-#banner .inner p{
-    margin-top:50px;
-    font-family:cursive;
-    font-family:Microsoft YaHei;
-    font-size:18px;
-    color:#fff;
-    opacity: .9;
-    letter-spacing:2px;
 }
 
-.inner button{
+#banner .inner p {
+    margin-top: 50px;
+    font-family: cursive;
+    font-family: Microsoft YaHei;
+    font-size: 18px;
+    color: #fff;
+    opacity: .9;
+    letter-spacing: 2px;
+}
+
+.inner button {
     border: none;
-    background:#B6577C ;
+    background: #B6577C;
     width: 80px;
     height: 30px;
-    border-radius:3px;
-    margin-top:150px;
-    font-size:14px;
+    border-radius: 3px;
+    margin-top: 150px;
+    font-size: 14px;
     text-align: center;
-    font-family:微软雅黑;
+    font-family: 微软雅黑;
     font-weight: 600;
     opacity: 0.8;
 }
 
-hr{
-    margin:0 auto;
-    background-color:#6e6e6e;
-    height:2px;
-    border:none;
-    
+hr {
+    margin: 0 auto;
+    background-color: #6e6e6e;
+    height: 2px;
+    border: none;
 }
 
 
 /*green personal imformation  logo */
-.green-section{
 
-    width:100%;
-    height:100vh;
-    background-color:#24ae6a;
-    text-align:center;
+.green-section {
+    width: 100%;
+    height: 100vh;
+    background-color: #24ae6a;
+    text-align: center;
     overflow: hidden;
-   
 }
+
+
 /*warp --> title div ,  item div ,  img*/
-.warp{
-    width:80%;
+
+.warp {
+    width: 80%;
     margin: 0px auto;
-    
- 
 }
+
 
 /*green-title  in same div box*/
-.green-title{
+
+.green-title {
     max-width: 500px;
     margin: 100px auto;
-    position:relative;
-    top:50px;
+    position: relative;
+    top: 50px;
 }
 
-
-.green-title h2{
-    
+.green-title h2 {
     font-family: 微软雅黑;
-    
-    font-size:24px;
+    font-size: 24px;
     font-weight: 600;
-    letter-spacing:1px;
+    letter-spacing: 1px;
+}
 
+.green-section hr {
+    margin: 0 auto;
+    background-color: #239e61;
+    height: 2px;
+    border: none;
 }
-.green-section hr{
-    margin:0 auto;
-    background-color:#239e61;
-    height:2px;
-    border:none;
-    
-}
-.green-title p{
-    
+
+.green-title p {
     margin-left: auto;
-    margin-right:auto;
-    margin-top:50px;
+    margin-right: auto;
+    margin-top: 50px;
     font-family: cursive;
-    font-size:20px;
-    
+    font-size: 20px;
 }
 
-#item_icon{
-    width:750px;
-    height:250px;
-    position:relative;
-    top:50px;
-    margin-left:auto;
-    margin-right:auto;
-    
+#item_icon {
+    width: 750px;
+    height: 250px;
+    position: relative;
+    top: 50px;
+    margin-left: auto;
+    margin-right: auto;
     overflow: hidden;
-    
 }
 
-#item_icon .icon{
-    
+#item_icon .icon {
     display: inline-block;
-    width:20%;
-    height:60%;
-    
-    
-    min-width:150px;
-    min-height:150px;
-    
-    background-color:rgba(31, 148, 90,1);
+    width: 20%;
+    height: 60%;
+    min-width: 150px;
+    min-height: 150px;
+    background-color: rgba(31, 148, 90, 1);
     margin: 5%;
-    transform:rotate(45deg);
+    transform: rotate(45deg);
     opacity: 0.6;
-   
     overflow: hidden;
 }
 
-#item_icon li{
-      box-shadow :-1px -1px 5px rgba(0,0,0,0.6);
+#item_icon li {
+    box-shadow: -1px -1px 5px rgba(0, 0, 0, 0.6);
 }
 
-#item_icon li p{
-    
+#item_icon li p {
     font-family: 微软雅黑;
     font-weight: 600;
-    color:aliceblue;
-    position:relative;
-    top:60px;
-    transform:rotate(-45deg);
-    letter-spacing:3px;
-    text-align:center;
-    font-size:20px;
-    cursor:pointer;
+    color: aliceblue;
+    position: relative;
+    top: 60px;
+    transform: rotate(-45deg);
+    letter-spacing: 3px;
+    text-align: center;
+    font-size: 20px;
+    cursor: pointer;
 }
-
 
 
 /* blue  article-pre  imformation preview */
-.blue-section{
-    margin:0 auto;
-    width:100%;
-    height:100vh;
-    background-color:rgb(9, 73, 101);/*  #2484ae  */
-    text-align:center;
+
+.blue-section {
+    margin: 0 auto;
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(9, 73, 101);
+    /*  #2484ae  */
+    text-align: center;
     padding-bottom: 10px;
 }
-.article-pre{
-    width:80%;
-    height:30vh;
-    
-    margin:0 auto 0 auto;
-    
-    background-color:rgb(8, 69, 96);
-    
+
+.article-pre {
+    width: 80%;
+    height: 30vh;
+    margin: 0 auto 0 auto;
+    background-color: rgb(8, 69, 96);
 }
 
-
-.article-pre .img-sec{
-    width:25%;
-    
-    height:90%;
+.article-pre .img-sec {
+    width: 25%;
+    height: 90%;
     float: left;
-      
 }
 
-.article-pre .img-sec img{
-    width:100%;
-    height:100%;
-    margin-top:5%;
+.article-pre .img-sec img {
+    width: 100%;
+    height: 100%;
+    margin-top: 5%;
 }
 
-.article-pre .txt-sec{
-    width:35%;
-    height:85%;
-    
+.article-pre .txt-sec {
+    width: 35%;
+    height: 85%;
     float: right;
-    position:relative;
-    top:15%;
+    position: relative;
+    top: 15%;
     text-align: center;
-    color:#ccc;
+    color: #ccc;
     overflow: hidden;
 }
 
-.article-pre .txt-sec h2{
+.article-pre .txt-sec h2 {
     font-family: 微软雅黑;
-    font-size:24px;
+    font-size: 24px;
     font-weight: 600;
-    color:#ccc;
-    margin:0 auto;
-    
- 
+    color: #ccc;
+    margin: 0 auto;
 }
 
-.article-pre .txt-sec p{
-    margin-top:25px;
-    text-align:left;
+.article-pre .txt-sec p {
+    margin-top: 25px;
+    text-align: left;
     font-family: cursive;
-    
 }
 
-
-.article-pre .txt-sec a{
-    
-    position:relative;
-    top:15px;
-    
+.article-pre .txt-sec a {
+    position: relative;
+    top: 15px;
     font-family: cursive;
     text-decoration: none;
-    font-size:14px;
+    font-size: 14px;
     text-align: center;
-  
     font-weight: 600;
     opacity: 0.8;
     color: #c11a7a;
-
 }
 
-.article-pre .txt-sec a:hover{
-    font-size:16px;
-     opacity:1;
+.article-pre .txt-sec a:hover {
+    font-size: 16px;
+    opacity: 1;
     font-weight: 800;
     color: #c11a7a;
 }
 
 
-
 /*use  different class to set the article and image position*/
-.article-pre2{
-     background-color:rgb(8, 64, 89);
+
+.article-pre2 {
+    background-color: rgb(8, 64, 89);
 }
 
-.article-pre2 .img-sec{
-    
-    float:right;
+.article-pre2 .img-sec {
+    float: right;
 }
 
-.article-pre2 .txt-sec{
-    float:left;
+.article-pre2 .txt-sec {
+    float: left;
 }
 
-.article-pre3{
-     background-color:rgb(7, 58, 82);
-     
+.article-pre3 {
+    background-color: rgb(7, 58, 82);
 }
-
 
 
 /* purple    card-group */
-.purple-section{
-    margin:0 auto;
-    width:100%;
-    height:100vh;
-    background-color:#9136c9;/*rgb(195, 195, 62)  #2484ae  */
-    text-align:center;
+
+.purple-section {
+    margin: 0 auto;
+    width: 100%;
+    height: 100vh;
+    background-color: #9136c9;
+    /*rgb(195, 195, 62)  #2484ae  */
+    text-align: center;
     overflow: hidden;
-    
 }
+
 
 /*warp of the purple section*/
-.purple-warp{
+
+.purple-warp {
     margin: 50px auto;
-    max-width:80%;
-    
+    max-width: 80%;
 }
 
-
-
-.sub-head{
-    width:50%;
+.sub-head {
+    width: 50%;
     margin: 0 auto;
 }
 
-.sub-head h2{
+.sub-head h2 {
     font-family: 微软雅黑;
-    font-weight:600;
-    font-size:24px;
+    font-weight: 600;
+    font-size: 24px;
     letter-spacing: 2px;
-    color:#ddd;
+    color: #ddd;
 }
-.sub-head p{
+
+.sub-head p {
     font-family: cursive;
-    font-size:16px;
+    font-size: 16px;
     text-align: center;
-    font-weight:600;
-    color:#ddd;
-}
-.card-group{
-    
-    width:60%;
-    margin:50px auto;
-    
+    font-weight: 600;
+    color: #ddd;
 }
 
-.card{
-    width:50%;
-    height:250px;
-    float:left;
-    
-    
+.card-group {
+    width: 60%;
+    margin: 50px auto;
 }
 
-.card h4{
+.card {
+    width: 50%;
+    height: 250px;
+    float: left;
+}
+
+.card h4 {
     font-family: 微软雅黑;
-    font-size:18px;
+    font-size: 18px;
     text-align: center;
-    color:#ddd;
-    margin-top:20px;
+    color: #ddd;
+    margin-top: 20px;
 }
+
 
 /* add mask  to crad  every increase of 0.05 */
-.card:first-child{
-    background:rgba(0, 0, 0, 0.05);
-}
-.card:nth-child(2){
-    background:rgba(0, 0, 0, 0.1);
-}
-.card:nth-child(3){
-    background:rgba(0, 0, 0, 0.15);
-}
-.card:nth-child(4){
-    background:rgba(0, 0, 0, 0.2);
+
+.card:first-child {
+    background: rgba(0, 0, 0, 0.05);
 }
 
+.card:nth-child(2) {
+    background: rgba(0, 0, 0, 0.1);
+}
+
+.card:nth-child(3) {
+    background: rgba(0, 0, 0, 0.15);
+}
+
+.card:nth-child(4) {
+    background: rgba(0, 0, 0, 0.2);
+}
 
 
 /*grey section have */
 
-.grey-section{
-    width:100%;
-    height:100vh;
-    margin:0 auto;
-    background-color:#2D3032;/*rgb(195, 195, 62)  #2484ae  */
-    text-align:center;
-    
+.grey-section {
+    width: 100%;
+    height: 100vh;
+    margin: 0 auto;
+    background-color: #2D3032;
+    /*rgb(195, 195, 62)  #2484ae  */
+    text-align: center;
 }
 
-.grey_head{
-    max-width:500px;
+.grey_head {
+    max-width: 500px;
     margin: 0 auto;
     position: relative;
-    top:100px;
+    top: 100px;
 }
 
-.grey_head h2{
-    font-size:24px;
+.grey_head h2 {
+    font-size: 24px;
     text-align: center;
     letter-spacing: 3px;
-    font-family:微软雅黑;
+    font-family: 微软雅黑;
     font-weight: 600;
-    color:#ccc;
+    color: #ccc;
 }
 
-#circle_group{
-    
+#circle_group {
     max-width: 900px;
-    margin:auto;
-    line-height:300px;
-    
-    
+    margin: auto;
+    line-height: 300px;
 }
+
 
 /* set circle size */
-.circle{
-    margin-top:250px;
-    width:300px;
-    height:300px;
-    background-color:aliceblue;
-    float:left;
-    border-radius: 50%;
 
+.circle {
+    margin-top: 250px;
+    width: 300px;
+    height: 300px;
+    background-color: aliceblue;
+    float: left;
+    border-radius: 50%;
 }
+
 
 /* temporary fill circle  color  in circle class  */
 
-.circle:nth-child(1){
-    background-color:#81b545;
-     position:relative;
-    left:20px; 
-    
+.circle:nth-child(1) {
+    background-color: #81b545;
+    position: relative;
+    left: 20px;
 }
 
-.circle:nth-child(2){
-    background-color:#4574b5;
- 
+.circle:nth-child(2) {
+    background-color: #4574b5;
 }
 
-.circle:nth-child(3){
-    background-color:#b54545;
-    position:relative;
-    left:-20px; 
-    
+.circle:nth-child(3) {
+    background-color: #b54545;
+    position: relative;
+    left: -20px;
 }
+
 
 /* set semi-cilcle div size at here */
-.circle i{
-    float:left;
-    width:300px;
-    
+
+.circle i {
+    float: left;
+    width: 300px;
 }
 
-
-
-.circle p{
-    float:left;
-    width:300px;
-    height:150px;
-    
-    position:relative;
+.circle p {
+    float: left;
+    width: 300px;
+    height: 150px;
+    position: relative;
     line-height: 150px;
-    font-size:20px;
+    font-size: 20px;
     text-align: center;
     letter-spacing: 3px;
-    font-family:微软雅黑;
+    font-family: 微软雅黑;
     font-weight: 600;
     color: #ddd;
-    
 }
+
 
 /*set upper semi-circle img  at here */
-.circle:nth-child(1) i{
-    background-image:url(../img/chicken.jpg);
+
+.circle:nth-child(1) i {
+    background-image: url(../img/chicken.jpg);
     background-position: center center;
-    background-size:cover;
-    
+    background-size: cover;
 }
 
-.circle:nth-child(2) i{
-    background-image:url(../img/dog2.jpg);
+.circle:nth-child(2) i {
+    background-image: url(../img/dog2.jpg);
     background-position: center center;
-    background-size:cover;
-    
+    background-size: cover;
 }
 
-.circle:nth-child(3) i{
-    background-image:url(../img/dog3.jpg);
+.circle:nth-child(3) i {
+    background-image: url(../img/dog3.jpg);
     background-position: center center;
-    background-size:cover;
-    
+    background-size: cover;
 }
+
 
 /*use js contral the uppper semi_circle*/
+
+
 /* mouse move in to uppersemi-circle   */
 
-.mouseover{
-/*    width:300px;*/
-    height:300px;
+.mouseover {
+    /*    width:300px;*/
+    height: 300px;
     border-radius: 150px;
-   transition: all .5s ease 0.2s;
-    -webkit-transition:all .5s ease 0.2s;
-    -moz-transition:all .3s ease 0.1s;
-}
-
-.mouseout{
-/*    width:300px;*/
-    height:150px;
-    border-radius: 150px 150px 0px 0px ;
     transition: all .5s ease 0.2s;
-    -webkit-transition:all .5s ease 0.2s;
-    -moz-transition:all .3s ease 0.1s;
+    -webkit-transition: all .5s ease 0.2s;
+    -moz-transition: all .3s ease 0.1s;
 }
 
-
-.low_mouseover{
-   display: none;
-   opacity:0.2;
+.mouseout {
+    /*    width:300px;*/
+    height: 150px;
+    border-radius: 150px 150px 0px 0px;
+    transition: all .5s ease 0.2s;
+    -webkit-transition: all .5s ease 0.2s;
+    -moz-transition: all .3s ease 0.1s;
 }
 
-.low_mouseout{
-    height:150px;
-    border-radius:0 0 150px 150px;
-    
+.low_mouseover {
+    display: none;
+    opacity: 0.2;
+}
+
+.low_mouseout {
+    height: 150px;
+    border-radius: 0 0 150px 150px;
     overflow: hidden;
-    opacity:0.8;
+    opacity: 0.8;
     transition: all .5s ease 0.1s;
-    -webkit-transition:all .5s ease 0.1s;
-    -moz-transition:all .5s ease 0.1s;
+    -webkit-transition: all .5s ease 0.1s;
+    -moz-transition: all .5s ease 0.1s;
 }
 
-
-.bottom{
-    width:100%;
-    height:100vh;
-}
-
-.bottom{
-    
-    
-    background-image:url(../img/cat.jpg);
-    background-repeat: no-repeat;
-    background-size:cover;
-    background-position:center;
-    position:relative;
-   
-    
-}
-
-.bottom-mask{
+.bottom {
     width: 100%;
     height: 100vh;
-    position:absolute;
+}
+
+.bottom {
+    background-image: url(../img/cat.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+.bottom-mask {
+    width: 100%;
+    height: 100vh;
+    position: absolute;
     bottom: 0;
-    left:0;
-    
+    left: 0;
     background-color: rgba(0, 0, 0, 0.4);
-    box-shadow:inset 150px -350px 100px rgba(0, 0, 0, 0.2)
-    
-   
+    box-shadow: inset 150px -350px 100px rgba(0, 0, 0, 0.2)
 }
 
-.bottom-mask:hover{
+.bottom-mask:hover {
     background-color: rgba(0, 0, 0, 0.3);
-    box-shadow:inset 0px 0px 50px rgba(0, 0, 0, 0.3)
+    box-shadow: inset 0px 0px 50px rgba(0, 0, 0, 0.3)
 }
 
-
-.bottom_btn{
-    width:200px;
-    height:150px;
-  
-    position:absolute;
-    bottom:300px;
-    left:15%;
+.bottom_btn {
+    width: 200px;
+    height: 150px;
+    position: absolute;
+    bottom: 300px;
+    left: 15%;
     border-radius: 10px;
-    
 }
 
-.bottom_btn button{
+.bottom_btn button {
     border: none;
-    background:#B6577C ;
+    background: #B6577C;
     width: 100px;
     height: 30px;
-    border-radius:3px;
-    margin:25px 50px;
-    
-    
-    font-size:14px;
+    border-radius: 3px;
+    margin: 25px 50px;
+    font-size: 14px;
     text-align: center;
     letter-spacing: 2px;
-    font-family:微软雅黑;
+    font-family: 微软雅黑;
     font-weight: 600;
     opacity: 0.8;
 }
 
-button:hover{
-     opacity:1;
-     background:#be4c79 ;
-     color:aliceblue;
-    
+button:hover {
+    opacity: 1;
+    background: #be4c79;
+    color: aliceblue;
 }
 
-.copy{
-    
-    width:100%;
-    height:20vh;
-    
-   position:absolute;
-   bottom:0;
-   background-color: #00182c;
-   
+.copy {
+    width: 100%;
+    height: 20vh;
+    position: absolute;
+    bottom: 0;
+    background-color: #00182c;
 }
-.copy p{
-    margin-top:60px;
-     font-size:20px;
+
+.copy p {
+    margin-top: 60px;
+    font-size: 20px;
     text-align: center;
     letter-spacing: 3px;
-    font-family:微软雅黑;
+    font-family: 微软雅黑;
     font-weight: 600;
-    color:aliceblue;
-   
-}
-.copy h6{
-    margin-top:20px;
-    font-size:14px;
-    text-align: center;
-    letter-spacing: 2px;
-    font-family:黑体;
-    
-    color:#eee;
+    color: aliceblue;
 }
 
+.copy h6 {
+    margin-top: 20px;
+    font-size: 14px;
+    text-align: center;
+    letter-spacing: 2px;
+    font-family: 黑体;
+    color: #eee;
+}
+
+
+/*new feature*/
+
+#menu {
+    width: 20px;
+    height:200px;
+    margin: 0;
+    padding: 0;
+    position: fixed;
+    left: 95%;
+    top: 45%;
+    list-style-type: none;
+    z-index: 70;
+    overflow: hidden;
+}
+
+
+#menu a {
+    width: 15px;
+    height: 15px;
+    border-radius:7.5px;
+    float: right;
+    margin:10px 0 0 0;
+/*     padding: 10px 20px; */
+    background-color: #fff;
+    color: #333;
+    text-decoration: none;
+}
+
+#menu .active a {
+    color: #fff;
+    background-color: #555;
+}

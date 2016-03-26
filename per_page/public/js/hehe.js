@@ -7,9 +7,15 @@ window.onload = function() {
     mulAnimation();
 
     $(function() {
-        $('#dowebok').fullpage();
-    });
+        $('#dowebok').fullpage({
+            
+            //绑定菜单
+            anchors: ['page1', 'page2', 'page3', 'page4','page5','page6'],
+            menu: '#menu',
 
+        });
+    });
+     
 }
 /*
  function  semi_circle
@@ -148,4 +154,6 @@ function mulAnimation() {
     }
 
 }
+
+
 
