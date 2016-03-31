@@ -1,0 +1,51 @@
+//http://int-double.com/api/get_recent_posts/?callback=show_posts_widget&read_more=More&count=1
+
+show_posts_widget({
+    "status": "ok",
+    "count": 1,
+    "count_total": 5,
+    "pages": 5,
+    "posts": [{
+        "id": 46,
+        "type": "post",
+        "slug": "wordpress-%e9%97%ae%e9%a2%98%e6%80%bb%e6%b1%87",
+        "url": "http:\/\/int-double.com\/2016\/03\/wordpress-%e9%97%ae%e9%a2%98%e6%80%bb%e6%b1%87\/",
+        "status": "publish",
+        "title": "wordpress 问题总汇",
+        "title_plain": "wordpress 问题总汇",
+        "content": "<h4>这里会把我自己搭建 这个blog时 遇到的问题进行汇总<\/h4>\n<p> <\/p>\n<h3><\/h3>\n<p>问题：<\/p>\n<h3>固定链接设置<\/h3>\n<h5>网站访问的时候 只有主页可以访问， 想要访问单独文章的页面或者分类目录的页面就无法显示。<\/h5>\n<p>解决方法：<\/p>\n<h5>在 Apache的 设置 httpd.conf 的设置目录下， 如下设置<\/h5>\n<p><code><Directory \"\/文件路径\"><br \/>\nOptions Indexes FollowSymLinks<br \/>\nAllowOverride All<br \/>\nOrder allow,deny<br \/>\nAllow from all<br \/>\n<\/Directory><\/code><\/p>\n<h5>权限允许为 AllowOverride All， 就可以了。<\/h5>\n",
+        "excerpt": "<p>这里会把我自己搭建 这个blog时 遇到的问题进行汇总   问题： 固定链接设置 网站访问的时候 只 … <a href=\"http:\/\/int-double.com\/2016\/03\/wordpress-%e9%97%ae%e9%a2%98%e6%80%bb%e6%b1%87\/\" class=\"more-link\">继续阅读<span class=\"screen-reader-text\">“wordpress 问题总汇”<\/span><\/a><\/p>\n",
+        "date": "2016-03-31 15:51:50",
+        "modified": "2016-03-31 15:51:50",
+        "categories": [{
+            "id": 3,
+            "slug": "%e6%8a%80%e6%9c%af",
+            "title": "技术",
+            "description": "",
+            "parent": 0,
+            "post_count": 3
+        }],
+        "tags": [{
+            "id": 12,
+            "slug": "wordpress",
+            "title": "wordpress",
+            "description": "",
+            "post_count": 1
+        }],
+        "author": {
+            "id": 1,
+            "slug": "jimze",
+            "name": "@jimze",
+            "first_name": "",
+            "last_name": "",
+            "nickname": "@jimze",
+            "url": "",
+            "description": ""
+        },
+        "comments": [],
+        "attachments": [],
+        "comment_count": 0,
+        "comment_status": "open",
+        "custom_fields": {}
+    }]
+})
