@@ -1,12 +1,56 @@
+/*css reset*/
+
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, form, fieldset, input, textarea, p, blockquote, th, td {
+    padding: 0;
+    margin: 0;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+fieldset, img {
+    border: 0;
+}
+
+address, caption, cite, code, dfn, em, strong, th, var {
+    font-weight: normal;
+    font-style: normal;
+}
+
+ol, ul {
+    list-style: none;
+}
+
+caption, th {
+    text-align: left;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: normal;
+    font-size: 100%;
+}
+
+q:before, q:after {
+    content: '';
+}
+
+abbr, acronym {
+    border: 0;
+}
+
 #left{
 	clear:both;
 	width:40%;
 	height:100vh;
 	float:left;
+	position:fixed;
 	background-image: url(https://s.yimg.com/uy/build/images/sohp/inspiration/getting-the-shot3.jpg);
 	background-repeat: no-repeat;
 	background-attachment:fixed;
-	background-size:cover;
+/* 	background-size:cover; */
+	background-size:auto 100vh;
 	background-position:-600px;
 	padding-top:15%;
 }
@@ -17,6 +61,7 @@
 	margin-left:10%;
 	position:fixed;
 	background-color: rgba(0,0,0,0.4);
+	z-index: -1;
 }
 
 .head_pro{
@@ -34,6 +79,7 @@
 .name{
 	color:rgb(220,220,220);
 	font-weight:600;
+    font-family:sans-serif;
 	text-align: center;
 
 }
@@ -41,14 +87,46 @@
 .user p{
 	color:rgb(220,220,220);
 	font-weight:600;
+    font-family:sans-serif;
 	text-align: center;
 }
 
+.small_nav{
+	width:300px;
+	height:30px;
+  
+	margin-left:37%;
+	margin-top:300px;
+	z-index: 99;
+	
+}
+.small_nav ul{
+	list-style: none;
+	
+}
+
+.small_nav ul li{
+	
+	list-style-type:none;
+	display: inline-block;
+	margin-right:10px;
+
+}
+
+.small_nav ul li a{
+	 text-decoration:none;
+	 font-size:16px;
+	 font-weight:600;
+	 color:#FFF;
+
+	 
+	
+}
 
 
 #right{
 	width: 60%;
-	height:100vh;
+	height:auto;
 	float:right;
 	/*background-color: rgba(50,50,50,1);*/
 	
@@ -57,32 +135,45 @@
 .infor{
 
 	width: 100%;
-	height:90%;
-	margin-top:5%;
+	height:120vh;
+ 	margin-top:5%; 
 	position:right;
-	background-color: #000;
+	background-color: #333;
 }
 .past{
 	width: 100%;
-	height:30vh;
-	background-color: #000;
-
+	height:40vh;
+	padding-top:10px;
+/* 	background-color: #3167ce; */
+  border-bottom:3px solid #000;
 }
+
 .now{
 	width: 100%;
-	height:30vh;
-	background-color: #000;
+	height:40vh;
+	padding-top:10px;
+/* 	background-color:#fff; */
+	border-bottom:3px solid #000;
 
 }
 .feture{
 	width: 100%;
-	height:30vh;
-	background-color: #000;
+	padding-top:10px;
+	height:40vh;
+/* 	background-color: #49b53b; */
 
 }
 
 .footer{
 	width: 100%;
-	height:5%;
-	background-color: #aaa;
+	height:10vh;
+	background-color: #333;
+	position:relative;
+	
+}
+
+section h2{
+	font-size:24px;
+	text-align: center;
+	letter-spacing:2px;
 }
