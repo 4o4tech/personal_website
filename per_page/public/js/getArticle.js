@@ -1,43 +1,3 @@
-/*//ie XDR request
-function getArticle(url) {
-
-    var xhr = new XDomainRequest(); // 
-
-
-   xhr.onreadystatechange = function(){
-   		if(xhr.readyState == 4){
-   			if((xhr.status >= 200 && xhr.status < 300) || xhr.status ==304){
-   				document.getElementById("text_title1").innerHTML = xhr.responseText.title;	
-
-   			}else{
-   				console.log("ERROR");
-   			}
-   		}
-   }
-
-
-    xhr.onerr = function() {
-        alert("Error");
-    }
-
-    xhr.timeout = 3000;
-    xhr.ontimeout = function() {
-        console.log("request out of time");
-    }
-
-
-    xhr.open(
-        "GET", //DOMString method   "GET", "POST", "PUT", "DELETE"
-        url // the file is requestd
-    );
-
-
-    xhr.send(null);
-}
-*/
-
-
-
 function getJsonp(subName) {
 
     var domain = "http://int-double.com";
@@ -62,29 +22,46 @@ function getJsonp(subName) {
 function solov(data) {
 
     var posts = data.posts;
-
+    console.log(posts);
     posts.forEach(function(article){
         //articles' title and content
-       console.log('The article name is: ' + article.title) 
+        var title = article.title;
+        var excerpt = article.excerpt;
+        var url = article.url;
+
+        buildArtiTag(title,excerpt,url);
+
+        //console.log('The article name is: ' + article.title)
+        //console.log('The article name is: ' + article.excerpt) 
         //article.content
     })
 
-/*    var posts0 = data.posts[0];
-    var posts1 = data.posts[1];
-
-    var title = posts0.title;
-    var content = posts0.content;
-
-    var title1 = posts1.title;
-    var content1 = posts1.content;
-
-    console.log('The article name is: ' + title);
-    console.log('The second article name is: ' + title1);
-*/
-    // console.log('\n Content:  ' + content);
-
 }
 
+// problem can get txt-sec
+function buildArtiTag(title,excerpt,url){
+    var getDiv = document.getElementsByClassName('txt-sec');
+    console.log(getDiv);
+
+    for(var ele in getDiv){
+        var H2 = document.createElement('h2');
+        var articleP = document.createElement('p');
+        var articleA = document.createElement('a');
+
+        H2.innerHTML(title);
+        articleP.innerText(excerpt);
+        articleA.setAttribute('href',url)
+        ele.appendChild(H2);
+        ele.appendChild(articleP);
+        ele.appendChild(articleA);
+    }
+
+ /*   getDiv.forEach(function(ele){
+        
+
+    })*/
+
+}
 
 
 window.onload = function() {
