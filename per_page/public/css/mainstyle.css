@@ -705,9 +705,9 @@ button:hover {
 
 
 #menu a {
-    width: 15px;
-    height: 15px;
-    border-radius:7.5px;
+    width: 12px;
+    height: 12px;
+    border-radius:6px;
     float: right;
     margin:10px 0 0 0;
 /*     padding: 10px 20px; */
