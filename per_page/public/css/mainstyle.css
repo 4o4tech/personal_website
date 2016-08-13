@@ -325,14 +325,14 @@ hr {
 
 .article-pre .txt-sec h2 {
     font-family: 微软雅黑;
-    font-size: 24px;
+    font-size: 20px;
     font-weight: 600;
     color: #ccc;
     margin: 0 auto;
 }
 
 .article-pre .txt-sec p {
-    margin-top: 25px;
+    margin-top: 16px;
     text-align: left;
     font-family: cursive;
 }

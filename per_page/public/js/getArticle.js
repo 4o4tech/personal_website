@@ -22,50 +22,45 @@ function getJsonp(subName) {
 function solov(data) {
 
     var posts = data.posts;
-    console.log(posts);
-    posts.forEach(function(article){
-        //articles' title and content
-        var title = article.title;
-        var excerpt = article.excerpt;
-        var url = article.url;
+    var title, excerpt, url;
 
-        buildArtiTag(title,excerpt,url);
+    var getDiv = [];
 
-        //console.log('The article name is: ' + article.title)
-        //console.log('The article name is: ' + article.excerpt) 
-        //article.content
-    })
+    getDiv= $('.txt-sec');
 
-}
+   
+    var num = posts.length;
+    for (var i = 0; i < num; i++) {
+        //posts' title and content
+        title = posts[i].title;
+        excerpt = posts[i].excerpt;
+        url = posts[i].url;
 
-// problem can get txt-sec
-function buildArtiTag(title,excerpt,url){
-    var getDiv = document.getElementsByClassName('txt-sec');
-    console.log(getDiv);
-
-    for(var ele in getDiv){
+        console.log(title + ' ' + excerpt + ' ' + url);
+    
         var H2 = document.createElement('h2');
         var articleP = document.createElement('p');
         var articleA = document.createElement('a');
 
-        H2.innerHTML(title);
-        articleP.innerText(excerpt);
-        articleA.setAttribute('href',url)
-        ele.appendChild(H2);
-        ele.appendChild(articleP);
-        ele.appendChild(articleA);
+        console.log('type of H2 ' + typeof(H2));
+        $(H2).text(title);
+        $(articleP).text(excerpt)
+        articleA.setAttribute('href',url);
+        $(articleA).text('More');
+
+        getDiv[i].appendChild(H2);
+        getDiv[i].appendChild(articleP);
+        getDiv[i].appendChild(articleA);
+
+
+
     }
-
- /*   getDiv.forEach(function(ele){
-        
-
-    })*/
 
 }
 
 
 window.onload = function() {
-    var subname = '/api/get_recent_posts/?callback=show_posts_widget&read_more=More&count=2'
+    var subname = '/api/get_recent_posts/?callback=show_posts_widget&read_more=More&count=2';
     getJsonp(subname);
 
 }
