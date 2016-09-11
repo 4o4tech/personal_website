@@ -312,12 +312,14 @@ hr {
     margin-top: 5%;
 }
 
-.article-pre .txt-sec {
+.txt-sec {
     width: 35%;
     height: 85%;
     float: right;
     position: relative;
     top: 15%;
+    margin-right:15px;
+    margin-left:15px;
     text-align: center;
     color: #ccc;
     overflow: hidden;
@@ -332,15 +334,16 @@ hr {
 }
 
 .article-pre .txt-sec p {
-    margin-top: 16px;
+    margin-top: 20px;
     text-align: left;
     font-family: cursive;
-    font-size:14px;
+    font-size:16px;
 }
 
-.article-pre .txt-sec a {
+.more-link{
     position: relative;
-    top: 20px;
+
+
     font-family: cursive;
     text-decoration: none;
     font-size: 12px;
@@ -469,7 +472,7 @@ hr {
 }
 
 .grey_head {
-    max-width: 500px;
+    max-width: 500px;   
     margin: 0 auto;
     position: relative;
     top: 100px;

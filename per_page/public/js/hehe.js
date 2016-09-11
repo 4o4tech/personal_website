@@ -15,6 +15,17 @@ window.onload = function() {
 
         });
     });
+
+
+    /*
+        call the function 
+        the article form the int-double.com
+    */
+
+    var subname = '/api/get_recent_posts/?callback=show_posts_widget&read_more=More&count=2';
+    
+    //connct with blog and build tag
+    getJsonp(subname);
      
 }
 /*
@@ -103,7 +114,6 @@ function over(e) {
 
 function mulAnimation() {
 
-    //    alert('喵呜~~~    \n  mulAnimation  will run !!!')//test  test  test
 
     var liIcon = document.getElementById("item_icon").getElementsByTagName('li');
 

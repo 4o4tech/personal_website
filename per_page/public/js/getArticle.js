@@ -84,19 +84,32 @@ function solov(data) {
 function removeTag(){
     var removeSpan = [];
     removeSpan = $('.screen-reader-text');
-    console.log(typeof(removeSpan) +" length is "+ removeSpan.length);
+    //console.log(typeof(removeSpan) +" length is "+ removeSpan.length);
     $.each(removeSpan,function(i,el){
         el.remove();
     })
 }
 
 
+
+/* // the windows.onload can not 
+
+
 window.onload = function() {
+
+    
+
+    //call the function 
+    //the article form the int-double.com
+
+    
+
     var subname = '/api/get_recent_posts/?callback=show_posts_widget&read_more=More&count=2';
     
     //connct with blog and build tag
     getJsonp(subname);
 
-    //remove remianer tags
-
 }
+
+
+*/
