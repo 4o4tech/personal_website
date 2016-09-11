@@ -11,18 +11,19 @@
         <title>
             Jimze | 个人首页
         </title>
-        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js">
+        <script src="http://apps.bdimg.com/libs/jquery/1.6.4/jquery.min.js">
         </script>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.7.4/jquery.fullPage.css"/>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.7.4/jquery.fullPage.js">
         </script>
         <!-- change the css and js path -->
-        <link rel="stylesheet" href="/css/mainstyle.css"/>
-        <script type="text/javascript" src="/js/hehe.js">
+        <link rel="stylesheet" href="../public/css/mainstyle.css"/>
+        <script type="text/javascript" src="../public/js/hehe.js">
         </script>
+
     </head>
     <body>
-    </body>
+    
     <ul id="menu">
         <li data-menuanchor="page1" class="acvive">
             <a href="#page1">
@@ -71,7 +72,7 @@
                             </a>
                         </li>
                         <li>
-                            <a href="https://github.com/clingk">
+                            <a href="https://github.com/evil0xff">
                                 Github
                             </a>
                         </li>
@@ -119,14 +120,14 @@
                         <i>
                         </i>
                         <p>
-                            吃饭
+                            coding
                         </p>
                     </li>
                     <li class="icon">
                         <i>
                         </i>
                         <p>
-                            睡觉
+                            阅读
                         </p>
                     </li>
                     <li class="icon">
@@ -139,22 +140,28 @@
                 </ul>
             </div>
         </section>
+
+
         <!-- article preview section -->
+        <!-- this section will connect with bolg  -->
+
         <section class="blue-section section">
-            <div class="article-pre">
+            <div class="article-pre" id="text_sec">
                 <div class="img-sec">
                     <img data-src="img/pic01.jpg" alt=""/>
                 </div>
                 <div class="txt-sec">
+                    <!-- 
+                    template
                     <h2>
-                        一开始我是拒绝的
+                        title
                     </h2>
                     <p>
-                        People will always follow the heart much more readily than they will follow orders.
+                        excerpt
                     </p>
                     <a href="">
-                        More..
-                    </a>
+                        link to blog
+                    </a> -->
                 </div>
             </div>
             <div class="article-pre article-pre2">
@@ -162,15 +169,7 @@
                     <img data-src="img/pic02.jpg" alt=""/>
                 </div>
                 <div class="txt-sec">
-                    <h2>
-                        然而我依旧一人
-                    </h2>
-                    <p>
-                        It's not my responsiblity to have a personal life that everybody's comfortable with.
-                    </p>
-                    <a href="">
-                        More..
-                    </a>
+                
                 </div>
             </div>
             <div class="article-pre article-pre3">
@@ -178,19 +177,15 @@
                     <img data-src="img/pic03.jpg" alt=""/>
                 </div>
                 <div class="txt-sec">
-                    <h2>
-                        还有多远的路要走
-                    </h2>
-                    <p>
-                        One is always on a strange road, watching strange scenery and listening to strange music. Then one day, you will find that the things you try hard to forget are already gone.
-                    </p>
-                    <a href="">
-                        More..
-                    </a>
+                    
                 </div>
             </div>
         </section>
+
+
         <!-- purple section   have card group -->
+        <!-- this section will connct github page -->
+
         <section class="purple-section section">
             <div class="purple-warp">
                 <div class="sub-head">
@@ -225,7 +220,10 @@
                 </div>
             </div>
         </section>
+
+
         <!-- grey section use circle group -->
+        <!-- show hoppies and activitis -->
         <section class="grey-section section">
             <div class="grey_head">
                 <h2>
@@ -264,7 +262,9 @@
                 </ul>
             </div>
         </section>
+
         <!-- LAST miaow miaow ~~  cat section -->
+        
         <section class="bottom section">
             <i class="bottom-mask">
             </i>
@@ -294,4 +294,7 @@
             ( ●▽● )  maiow~~  maiow~~
         </footer>
     -->
+    <script src="../public/js/getArticle.js"></script>
+    </body>
+    
 </html>

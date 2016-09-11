@@ -70,10 +70,4 @@ html
 
 ### install and start node
 
-
-
-
-
-
-
-
+npm start

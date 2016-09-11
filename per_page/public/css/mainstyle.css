@@ -312,12 +312,14 @@ hr {
     margin-top: 5%;
 }
 
-.article-pre .txt-sec {
+.txt-sec {
     width: 35%;
     height: 85%;
     float: right;
     position: relative;
     top: 15%;
+    margin-right:15px;
+    margin-left:15px;
     text-align: center;
     color: #ccc;
     overflow: hidden;
@@ -325,24 +327,26 @@ hr {
 
 .article-pre .txt-sec h2 {
     font-family: 微软雅黑;
-    font-size: 24px;
+    font-size: 18px;
     font-weight: 600;
     color: #ccc;
     margin: 0 auto;
 }
 
 .article-pre .txt-sec p {
-    margin-top: 25px;
+    margin-top: 20px;
     text-align: left;
     font-family: cursive;
+    font-size:16px;
 }
 
-.article-pre .txt-sec a {
+.more-link{
     position: relative;
-    top: 15px;
+
+
     font-family: cursive;
     text-decoration: none;
-    font-size: 14px;
+    font-size: 12px;
     text-align: center;
     font-weight: 600;
     opacity: 0.8;
@@ -350,7 +354,7 @@ hr {
 }
 
 .article-pre .txt-sec a:hover {
-    font-size: 16px;
+    font-size: 14px;
     opacity: 1;
     font-weight: 800;
     color: #c11a7a;
@@ -468,7 +472,7 @@ hr {
 }
 
 .grey_head {
-    max-width: 500px;
+    max-width: 500px;   
     margin: 0 auto;
     position: relative;
     top: 100px;
@@ -705,9 +709,9 @@ button:hover {
 
 
 #menu a {
-    width: 15px;
-    height: 15px;
-    border-radius:7.5px;
+    width: 12px;
+    height: 12px;
+    border-radius:6px;
     float: right;
     margin:10px 0 0 0;
 /*     padding: 10px 20px; */
